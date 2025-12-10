@@ -1,20 +1,20 @@
-import Button from "@mui/material/Button";
-import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
-import ThreeDRotation from "@mui/icons-material/ThreeDRotation";
-import HomeIcon from "@mui/icons-material/Home";
-import { pink } from "@mui/material/colors";
-import Typography from "@mui/material/Typography";
-import { useColorScheme } from "@mui/material/styles";
+import Button from '@mui/material/Button';
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import ThreeDRotation from '@mui/icons-material/ThreeDRotation';
+import HomeIcon from '@mui/icons-material/Home';
+import { pink } from '@mui/material/colors';
+import Typography from '@mui/material/Typography';
+import { useColorScheme } from '@mui/material/styles';
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
   return (
     <Button
       onClick={() => {
-        setMode(mode === "light" ? "dark" : "light");
+        setMode(mode === 'light' ? 'dark' : 'light');
       }}
     >
-      {mode === "light" ? "Turn dark" : "Turn light"}
+      {mode === 'light' ? 'Turn dark' : 'Turn light'}
     </Button>
   );
 }
@@ -26,13 +26,13 @@ function App() {
       <hr />
       <div>Test</div>
 
-      <Typography variant="Body2" color="text.secondary">
+      <Typography variant='Body2' color='text.secondary'>
         Testing Typography
       </Typography>
 
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
+      <Button variant='text'>Text</Button>
+      <Button variant='contained'>Contained</Button>
+      <Button variant='outlined'>Outlined</Button>
 
       <br />
 
@@ -42,11 +42,11 @@ function App() {
       <br />
 
       <HomeIcon />
-      <HomeIcon color="primary" />
-      <HomeIcon color="secondary" />
-      <HomeIcon color="success" />
-      <HomeIcon color="action" />
-      <HomeIcon color="disabled" />
+      <HomeIcon color='primary' />
+      <HomeIcon color='secondary' />
+      <HomeIcon color='success' />
+      <HomeIcon color='action' />
+      <HomeIcon color='disabled' />
       <HomeIcon sx={{ color: pink[500] }} />
     </>
   );
